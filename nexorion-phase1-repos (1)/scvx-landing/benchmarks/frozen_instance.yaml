@@ -1,0 +1,42 @@
+# NEXORION-FI-2026-A — Frozen Problem Instance Definition
+# Rule: this file is immutable after the tagged release. Any change requires a
+# new instance identifier and a documented justification. All results must cite
+# the instance identifier and the commit hash of the tag.
+
+instance_id: NEXORION-FI-2026-A
+status: DRAFT  # -> FROZEN at kick-off tag
+
+hazard_map_family:
+  source_dataset: "TODO: fix at kick-off (e.g. LOLA-derived south-polar DEM tiles)"
+  resolution_m: null          # TODO fix
+  grid_sites: [16, 16]        # N x N candidate landing sites per map
+  n_maps: 5                   # maps in the frozen family
+
+dynamics:
+  model: "3DOF point-mass powered descent with mass depletion"
+  gravity_m_s2: 1.62          # lunar surface gravity
+  dry_mass_kg: null           # TODO: Argonaut-class representative value
+  wet_mass_kg: null           # TODO
+  thrust_min_N: null          # TODO
+  thrust_max_N: null          # TODO
+  isp_s: null                 # TODO
+
+constraints:
+  glide_slope_deg: null       # TODO
+  pointing_cone_deg: null     # TODO
+  terminal:
+    position_tol_m: null
+    velocity_tol_m_s: null
+
+cost:
+  objective: "fuel-optimal (final mass maximisation)"
+  discrete_layer: "landing-site selection over the frozen grid with hazard cost, divert cost, and mutual-exclusion constraints"
+
+instance_sizes:
+  small_enumerable_sites: 12   # brute-force validation bound (2^12 states)
+  medium_sites: 64
+  large_sites: 256
+
+versioning:
+  tag: "fi-2026-a"
+  note: "Derived artefacts (results, figures, tables) must cite instance_id + commit hash."

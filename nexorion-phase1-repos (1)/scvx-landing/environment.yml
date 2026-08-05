@@ -1,0 +1,10 @@
+name: scvx-landing
+channels: [conda-forge]
+dependencies:
+  - python=3.11
+  - numpy
+  - scipy
+  - cvxpy
+  - pyyaml
+  - matplotlib
+  - pytest

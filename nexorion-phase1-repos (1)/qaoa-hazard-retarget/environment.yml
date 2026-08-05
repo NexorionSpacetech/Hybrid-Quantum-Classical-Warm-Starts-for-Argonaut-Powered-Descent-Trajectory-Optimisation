@@ -1,0 +1,12 @@
+name: qaoa-hazard-retarget
+channels: [conda-forge]
+dependencies:
+  - python=3.11
+  - numpy
+  - scipy
+  - pytest
+  - pip
+  - pip:
+      - qiskit>=1.0
+      - qiskit-ibm-runtime
+      - qiskit-aer

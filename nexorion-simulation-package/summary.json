@@ -1,0 +1,88 @@
+{
+  "per_instance": [
+    {
+      "instance": 0,
+      "greedy_site": 0,
+      "opt_site": 3,
+      "cost_greedy": 4.178471180554433,
+      "cost_opt": 2.2981064574681516,
+      "classical_margin_pct": 13.157223055556454,
+      "ideal_margin_pct": 14.661514834025478
+    },
+    {
+      "instance": 1,
+      "greedy_site": 9,
+      "opt_site": 5,
+      "cost_greedy": 7.329711840067934,
+      "cost_opt": 3.562651604772303,
+      "classical_margin_pct": 10.636230527945653,
+      "ideal_margin_pct": 13.649878716182158
+    },
+    {
+      "instance": 2,
+      "greedy_site": 2,
+      "opt_site": 3,
+      "cost_greedy": 8.663683681855092,
+      "cost_opt": 6.347529850343648,
+      "classical_margin_pct": 9.569053054515926,
+      "ideal_margin_pct": 11.42197611972508
+    },
+    {
+      "instance": 3,
+      "greedy_site": 0,
+      "opt_site": 6,
+      "cost_greedy": 8.533635758179768,
+      "cost_opt": 1.1934934042155199,
+      "classical_margin_pct": 9.673091393456186,
+      "ideal_margin_pct": 15.545205276627584
+    },
+    {
+      "instance": 4,
+      "greedy_site": 8,
+      "opt_site": 2,
+      "cost_greedy": 5.428051995344793,
+      "cost_opt": 3.867784450874294,
+      "classical_margin_pct": 12.157558403724165,
+      "ideal_margin_pct": 13.405772439300565
+    }
+  ],
+  "levels": {
+    "nominal_3e-3": {
+      "lambda_mixing": 0.3273937521919119,
+      "hybrid_median_improvement_pct": 8.466217971788447,
+      "hybrid_ci95": [
+        6.220559309655823,
+        10.266979554003543
+      ],
+      "quantum_median_improvement_pct": -3.8717856814821996,
+      "quantum_ci95": [
+        -9.454972965631379,
+        -2.1573661472859595
+      ],
+      "hybrid_opt_site_rate": 0.23,
+      "quantum_infeasible_runs": 0,
+      "n_datapoints_per_arm": 500
+    },
+    "falsification_1e-2": {
+      "lambda_mixing": 0.7346337502522946,
+      "hybrid_median_improvement_pct": 0.0,
+      "hybrid_ci95": [
+        0.0,
+        2.58858836710737
+      ],
+      "quantum_median_improvement_pct": -11.514152223733502,
+      "quantum_ci95": [
+        -12.338003653270647,
+        -11.400581974374386
+      ],
+      "hybrid_opt_site_rate": 0.146,
+      "quantum_infeasible_runs": 0,
+      "n_datapoints_per_arm": 500
+    }
+  },
+  "falsification_analogue": {
+    "condition": "median hybrid improvement < 10% at eps = 1e-2",
+    "measured_pct": 0.0,
+    "triggered": true
+  }
+}

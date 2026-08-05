@@ -1,0 +1,109 @@
+{
+  "config": {
+    "n_sites": 12,
+    "instances": 5,
+    "dispersions": 40,
+    "sigma_hazard": 1.5,
+    "shots": 10000,
+    "eps": {
+      "nominal": 0.003,
+      "falsification": 0.01
+    }
+  },
+  "levels": {
+    "nominal": {
+      "C2_simann": {
+        "median_improvement_pct": 13.305671242208799,
+        "ci95": [
+          11.4332011558757,
+          19.36370354154013
+        ],
+        "opt_site_rate": 1.0,
+        "n": 200
+      },
+      "C3_exact": {
+        "median_improvement_pct": 13.305671242208799,
+        "ci95": [
+          11.4332011558757,
+          19.36370354154013
+        ],
+        "opt_site_rate": 1.0,
+        "n": 200
+      },
+      "Q1_qaoa": {
+        "median_improvement_pct": 6.220559309655823,
+        "ci95": [
+          0.467470120854118,
+          9.401896119086524
+        ],
+        "opt_site_rate": 0.235,
+        "n": 200
+      },
+      "Q2_adiabatic": {
+        "median_improvement_pct": -3.2861645560905974,
+        "ci95": [
+          -9.652719040793855,
+          0.0
+        ],
+        "opt_site_rate": 0.09,
+        "n": 200
+      },
+      "Q3_ws_qaoa": {
+        "median_improvement_pct": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "opt_site_rate": 0.075,
+        "n": 200
+      }
+    },
+    "falsification": {
+      "C2_simann": {
+        "median_improvement_pct": 13.305671242208799,
+        "ci95": [
+          11.4332011558757,
+          19.36370354154013
+        ],
+        "opt_site_rate": 1.0,
+        "n": 200
+      },
+      "C3_exact": {
+        "median_improvement_pct": 13.305671242208799,
+        "ci95": [
+          11.4332011558757,
+          19.36370354154013
+        ],
+        "opt_site_rate": 1.0,
+        "n": 200
+      },
+      "Q1_qaoa": {
+        "median_improvement_pct": 0.0,
+        "ci95": [
+          -3.1126119613633527,
+          2.58858836710737
+        ],
+        "opt_site_rate": 0.215,
+        "n": 200
+      },
+      "Q2_adiabatic": {
+        "median_improvement_pct": -8.233068301540815,
+        "ci95": [
+          -10.381413161655505,
+          -3.1126119613633527
+        ],
+        "opt_site_rate": 0.075,
+        "n": 200
+      },
+      "Q3_ws_qaoa": {
+        "median_improvement_pct": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "opt_site_rate": 0.075,
+        "n": 200
+      }
+    }
+  }
+}
